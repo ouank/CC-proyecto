@@ -13,6 +13,7 @@ Por esta razón, el objetivo de este proyecto es crear un sistema que le ayude a
 
 
 ## Arquitectura
-Este Proyecto hará uso de la arquitectura basada en microservicios. Ésta se ajusta adecuadamente al proyecto, ya que éste tendrá que dividirse en diferentes servicios independientes que tendrán que trabajar juntos para dar al cliente el mejor resultado. Como primer borrador, algunos de estos microservicios serán: un [API](https://ip-api.com/) para obtener la ubicación del cliente, el frontend, la base de datos para seleccionar las plantas, un API para redirigir al cliente a páginas con más información según las plantas determinadas.
+Este Proyecto hará uso de la arquitectura basada en microservicios. Ésta se ajusta adecuadamente al proyecto, ya que éste tendrá que dividirse en diferentes servicios independientes que tendrán que trabajar juntos para dar al cliente el mejor resultado. 
+Como primer borrador, algunos de estos microservicios serán: un [API](https://ip-api.com/) para obtener la ubicación del cliente, el frontend, la base de datos para seleccionar las plantas, un API para redirigir al cliente a páginas con más información según las plantas determinadas.
 
 
