@@ -1,4 +1,4 @@
-# CC-proyecto
+# La Selva Urbana
 En este repositorio se va a desarrollar un proyecto para la asignatura de Cloud Computing del Máster de Ingeniería Informática de la Universidad de Granada durante el curso 2020/21.
 
 La configuración de git y Github se encuentra [aquí](setup_documentation/prep_repo.md)
