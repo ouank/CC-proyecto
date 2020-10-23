@@ -15,3 +15,9 @@ Por esta razón, el objetivo de este proyecto es crear un sistema que le ayude a
 ## Arquitectura
 Este Proyecto hará uso de la arquitectura basada en microservicios. Ésta se ajusta adecuadamente al proyecto, ya que éste tendrá que dividirse en diferentes servicios independientes que tendrán que trabajar juntos para dar al cliente el mejor resultado. 
 Como primer borrador, algunos de estos microservicios serán: un [API](https://ip-api.com/) para obtener la ubicación del cliente, el frontend, la base de datos para seleccionar las plantas, un API para redirigir al cliente a páginas con más información según las plantas determinadas, un [API](https://pypi.org/project/Wikipedia-API/) para mostrar información básica de la planta. 
+
+## Roles
+Tan pronto como este proyecto se termine, habrá principalmente dos grupos de personas que podrán beneficiarse de ello. 
+1. Como usario de ese aplicación podrá encontrar plantas nuevas y adecuadas y/o las condiciones que las necesitan.
+2. Como Vendedor de plantas puede actualizar su lista de productos (dependiendo de la mayoría de las solicitudes de búsqueda), puede ver en qué región hay muchas solicitudes (para la expansión de negocio) y/o anunciar
+
