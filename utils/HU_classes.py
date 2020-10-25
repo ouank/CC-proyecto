@@ -26,6 +26,9 @@ class Request:
 		json_dict['User_comment'] = self.comment
 		save_json(json_dict,database_dir)
 
+	def repeat_plant_name(self):
+		return self.plant_name
+
 
 class Record_Traffic:
 	'''
