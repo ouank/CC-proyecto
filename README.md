@@ -36,7 +36,7 @@ Desde los roles (+yo como el administrador) podemos inferir historias de usarios
 [Aquí](utils/HU_classes.py) hay el primer borrador por unas clases.
 
 ## Roadmap
-basado en hitos y issues:
+basado en milestones y issues:
 - [Especificar el proyecto](https://github.com/ouank/selva_urbana/milestone/2)
 	- [8 Issues para especificat el proyecto](https://github.com/ouank/selva_urbana/milestone/2?closed=1)
 - [Crear la funcionalidad básica más simple](https://github.com/ouank/selva_urbana/milestone/3)
