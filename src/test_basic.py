@@ -1,11 +1,12 @@
 import unittest
-import HU_classes
+from utils.plant import Plant
+from utils.user import User
 
 class TestRequest(unittest.TestCase):
 
 	def test_type(self):
-		new_p = HU_classes.Request(new_plant='spider_plant')
-		self.assertIsInstance(new_p.repeat_plant_name(),str)
+		new_user = User(name='Mark', location={'country': 'ES', 'region':'Granada'}, email='Mark.Muster@hotmail.com')
+		self.assertIn('@', new_user.email)
 
 if __name__ == "__main__":
 	unittest.main()

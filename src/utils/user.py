@@ -2,7 +2,7 @@ class User(object):
 	'''
 	This is the User class
 	'''
-	def __init__(self, name: str, location: dict, email: str)
+	def __init__(self, name: str, location: dict, email: str) -> None:
 		self.name = name
 		self.location = location
 		self.email = email
