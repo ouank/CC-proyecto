@@ -32,10 +32,10 @@ Desde los roles (+yo como el administrador) podemos inferir historias de usarios
 - [Como negocio quiero ver de qué región provienen la mayoría de las solicitudes de los usuarios (para expandir el negocio)](https://github.com/ouank/selva_urbana/issues/17)
 - [Como anunciante quiero hacer publicidad dirigida](https://github.com/ouank/selva_urbana/issues/17)
 
-## Primer borrador por unas clases (corresponden a unas historias de usarios)
-[Aquí](utils/HU_classes.py) hay el primer borrador por unas clases.
+## Primer borrador de unas clases (corresponden a unas historias de usarios)
+[Aquí](src/HU_classes.py) hay el primer borrador por unas clases.
 
-## Roadmap
+## Milestones
 basado en milestones y issues:
 - [Especificar el proyecto](https://github.com/ouank/selva_urbana/milestone/2)
 	- [8 Issues para especificat el proyecto](https://github.com/ouank/selva_urbana/milestone/2?closed=1)
@@ -51,6 +51,40 @@ basado en milestones y issues:
 	- [Refinar el frontend a la solución MVP](https://github.com/ouank/selva_urbana/issues/23)
 - [Crear una tubería de análisis de datos](https://github.com/ouank/selva_urbana/milestone/5)
 	- [Registrar el tráfico en la aplicación](https://github.com/ouank/selva_urbana/issues/16)
-	- [ Analizar las solicitudes y el tráfico de datos](https://github.com/ouank/selva_urbana/issues/17)
+	- [Analizar las solicitudes y el tráfico de datos](https://github.com/ouank/selva_urbana/issues/17)
 - [Crear y ejecutar con éxito todas las pruebas](https://github.com/ouank/selva_urbana/milestone/6)
 - [Despliegue final de la aplicación en la plataforma de la nube](https://github.com/ouank/selva_urbana/milestone/7)
+
+## Hoja de ruta
+### Especifique el proyecto
+En primer lugar, es necesario especificar el proyecto:
+¿Quién se beneficiará de este proyecto? ¿Quiénes serán los usuarios? 
+--> Definir los roles del proyecto
+Elija un patrón de arquitectura que el proyecto seguirá.
+Crear la hoja de ruta del proyecto.
+
+### Desarollo
+En la primera fase del desarrollo creo la sistema funcional más simple posible. Esta sistema consiste en tres partes diferentes:
+	- [Crear la interfaz de usuario más simple](https://github.com/ouank/selva_urbana/issues/18)
+	- [Crear el sistema más simple de middle tier information brokering system](https://github.com/ouank/selva_urbana/issues/19)
+	- [Crear una base de datos simple con pocos ejemplos](https://github.com/ouank/selva_urbana/issues/20)
+
+En la segunda fase, se añaden a la aplicación funciones adicionales que satisfacen las necesidades de ciertos roles. Esas funciones son, por ejemplo: 
+	- [Implementar el Algoritmo de Búsqueda para navegar por el Banco de Datos por criterios](https://github.com/ouank/selva_urbana/issues/14)
+	- [Añadir la fórmula de solicitud](https://github.com/ouank/selva_urbana/issues/15)
+
+Simultáneamente, las tres partes básicas también se refinan a un estándar MVP.
+	- [Refinar la base de datos a una solución MVP](https://github.com/ouank/selva_urbana/issues/21)
+	- [Refinar el sistema de middle tier information brokering system a la solución MVP](https://github.com/ouank/selva_urbana/issues/22)
+	- [Refinar el frontend a la solución MVP](https://github.com/ouank/selva_urbana/issues/23)
+
+En la fase final del desarrollo, se crea una tubería de análisis de datos. La tubería debe cubrir al menos las siguientes funciones:
+	- [Registrar el tráfico en la aplicación](https://github.com/ouank/selva_urbana/issues/16)
+	- [Analizar las solicitudes y el tráfico de datos](https://github.com/ouank/selva_urbana/issues/17)
+
+### Pruebas 
+Esta es la fase de pruebas. Hay que crear pruebas (ya empiezan a crear pruebas durante la fase de desarrollo) y ejecutar todas las pruebas para comprobar si todo está bien.
+### Primer despliegue de la aplicación en una plataforma de la nube
+En esta fase la aplicación se pone en línea para una fase de prueba. 
+### Arreglar el código
+### Despliegue final
