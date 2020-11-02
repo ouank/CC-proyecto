@@ -1,5 +1,5 @@
 ---
-entidad: 
+entidad:
  -src/utils/plants.py
  -src/utils/user.py
 
