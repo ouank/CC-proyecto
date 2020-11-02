@@ -54,7 +54,7 @@ Desde los roles (+yo como el administrador) podemos inferir historias de usarios
 - [Crear y ejecutar con éxito todas las pruebas](https://github.com/ouank/selva_urbana/milestone/6)
 - [Despliegue final de la aplicación en la plataforma de la nube](https://github.com/ouank/selva_urbana/milestone/7)
 
-## Hoja de ruta
+## Hoja de ruta (Roadmap)
 ### Especifique el proyecto
 En primer lugar, es necesario especificar el proyecto:\
 ¿Quién se beneficiará de este proyecto? ¿Quiénes serán los usuarios? \
