@@ -1,5 +1,3 @@
----
 entidad:
- - src/utils/plants.py
- - src/utils/user.py
-
+- src/utils/plant.py
+- src/utils/user.py
