@@ -1,6 +1,6 @@
 class Plant(object):
 	'''
-	[HU] As a plant lover, I would like to find plants with my own criteria
+	[HU] As a plant lover, I would like to find plants with my own criteria 
 	'''
 	def __init__(self, name: str, water_quantity: str, water_quality: str, care_quantity: str, wind: bool, brightness: str, location: dict) -> None:
 		self.name = name

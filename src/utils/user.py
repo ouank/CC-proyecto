@@ -1,6 +1,6 @@
 class User(object):
 	'''
-	This is the User class
+	This is the User class 
 	'''
 	def __init__(self, name: str, location: dict, email: str) -> None:
 		self.name = name
