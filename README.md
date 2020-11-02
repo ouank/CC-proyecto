@@ -33,7 +33,7 @@ Desde los roles (+yo como el administrador) podemos inferir historias de usarios
 - [Como anunciante quiero hacer publicidad dirigida](https://github.com/ouank/selva_urbana/issues/17)
 
 ## Primer borrador de unas clases (corresponden a unas historias de usarios)
-[Aquí](src/utils/) hay el primer borrador por unas clases.
+[Aquí](src/utils/) hay el primer borrador de unas clases.
 
 ## Milestones y issues
 - [Especificar el proyecto](https://github.com/ouank/selva_urbana/milestone/2)
