@@ -21,46 +21,8 @@ Tan pronto como este proyecto se termine, habrá principalmente dos grupos de pe
 1. Como usario de ese aplicación podrá encontrar plantas nuevas y adecuadas y/o las condiciones que las necesitan.
 2. Como Vendedor de plantas puede actualizar su lista de productos (dependiendo de la mayoría de las solicitudes de búsqueda), puede ver en qué región hay muchas solicitudes (para la expansión de negocio) y/o anunciar
 
-## User Stories
-Desde los roles (+yo como el administrador) podemos inferir historias de usarios:
-- [Como buscador de plantas, quiero buscar plantas con mis propios criterios](https://github.com/ouank/selva_urbana/issues/14)
-- [Como buscador de plantas, quiero hacer sugerencias de nuevas plantas para añadir a las base de datos](https://github.com/ouank/selva_urbana/issues/15)
-- [Como buscador de plantas, quiero buscar por plantas concretas para ver cual condicciónes necesitan](https://github.com/ouank/selva_urbana/issues/14)
-- [Como Administrador de la aplicación, quiero analisar los actividades de los usarios para desarrollar más la aplicación](https://github.com/ouank/selva_urbana/issues/16)
-- [Como Administrador de la aplicación, quiero analizar cuánto tráfico habrá en mi aplicación](https://github.com/ouank/selva_urbana/issues/16)
-- [Como empresa quiero ver qué tipo de plantas son las más buscadas (para poder proporcionarlas)](https://github.com/ouank/selva_urbana/issues/17)	
-- [Como negocio quiero ver de qué región provienen la mayoría de las solicitudes de los usuarios (para expandir el negocio)](https://github.com/ouank/selva_urbana/issues/17)
-- [Como anunciante quiero hacer publicidad dirigida](https://github.com/ouank/selva_urbana/issues/17)
-
-## Primer borrador de unas clases (corresponden a unas historias de usarios)
-[Aquí](src/utils/) hay el primer borrador de unas clases.
-
-## Milestones y issues
-- [Especificar el proyecto](https://github.com/ouank/selva_urbana/milestone/2)
-	- [8 Issues para especificat el proyecto](https://github.com/ouank/selva_urbana/milestone/2?closed=1)
-- [Crear la funcionalidad básica más simple](https://github.com/ouank/selva_urbana/milestone/3)
-	- [Crear la interfaz de usuario más simple](https://github.com/ouank/selva_urbana/issues/18)
-	- [Crear el sistema más simple de middle tier information brokering system](https://github.com/ouank/selva_urbana/issues/19)
-	- [Crear una base de datos simple con pocos ejemplos](https://github.com/ouank/selva_urbana/issues/20)
-- [Refinar las funcionalidades del sistema a un estándar MVP](https://github.com/ouank/selva_urbana/milestone/4)
-	- [Implementar el Algoritmo de Búsqueda para navegar por el Banco de Datos por criterios](https://github.com/ouank/selva_urbana/issues/14)
-	- [Añadir la fórmula de solicitud](https://github.com/ouank/selva_urbana/issues/15)
-	- [Refinar la base de datos a una solución MVP](https://github.com/ouank/selva_urbana/issues/21)
-	- [Refinar el sistema de middle tier information brokering system a la solución MVP](https://github.com/ouank/selva_urbana/issues/22)
-	- [Refinar el frontend a la solución MVP](https://github.com/ouank/selva_urbana/issues/23)
-- [Crear una tubería de análisis de datos](https://github.com/ouank/selva_urbana/milestone/5)
-	- [Registrar el tráfico en la aplicación](https://github.com/ouank/selva_urbana/issues/16)
-	- [Analizar las solicitudes y el tráfico de datos](https://github.com/ouank/selva_urbana/issues/17)
-- [Crear y ejecutar con éxito todas las pruebas](https://github.com/ouank/selva_urbana/milestone/6)
-- [Despliegue final de la aplicación en la plataforma de la nube](https://github.com/ouank/selva_urbana/milestone/7)
 
 ## Hoja de ruta (Roadmap)
-### Especifique el proyecto
-En primer lugar, es necesario especificar el proyecto:\
-¿Quién se beneficiará de este proyecto? ¿Quiénes serán los usuarios? \
---> Definir los roles del proyecto\
-Elija un patrón de arquitectura que el proyecto seguirá.\
-Crear la hoja de ruta del proyecto.
 
 ### Desarollo
 En la primera fase del desarrollo creo la sistema funcional más simple posible. Esta sistema consiste en tres partes diferentes:
@@ -87,3 +49,14 @@ Esta es la fase de pruebas. Hay que crear pruebas (ya empiezan a crear pruebas d
 En esta fase la aplicación se pone en línea para una fase de prueba. 
 ### Arreglar el código
 ### Despliegue final
+
+## Miscelánea
+###User Stories
+[Los historis de usarios estan decribido aquí](project_information/user_stories.md)
+
+### Primer borrador de unas clases (corresponden a unas historias de usarios)
+[Aquí](src/utils/) hay el primer borrador de unas clases.
+
+## Milestones y issues
+[un esbozo del proyecto en hitos se puede encontrar aquí](project_information/milestones.md)
+
