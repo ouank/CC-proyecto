@@ -33,7 +33,7 @@ class User(object):
 		[HU] As a User I want to make a suggestions about plants that should be added to the data base
 		For now it adds the plant to a simple list on the OS. The Saving point of the list will be changed in a later step
 		Args: 
-			plant_name: Name of the plant the user suggests to be added to the data bank 
+			plant_name: Name of the plant the user suggests to be added to the data base 
 		'''
 		json_dict = load_json('new_plants.json')
 		user_id = str(self.id)
