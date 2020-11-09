@@ -1,5 +1,5 @@
 import unittest
-from utils.plant import Plant
+from utils.plant import PlantDB
 from utils.user import User
 
 class TestRequest(unittest.TestCase):
