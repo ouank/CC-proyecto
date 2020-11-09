@@ -1,4 +1,4 @@
-from utils.user import User
+from .user import User
 
 class Plant(object):
 	'''
@@ -23,6 +23,6 @@ class Plant(object):
 
 	def search(self) -> list:
 		user_loc = User.get_location()
-		
+
 
 		pass
