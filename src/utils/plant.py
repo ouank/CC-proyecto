@@ -62,8 +62,10 @@ class PlantDB(object):
 			print('Error saving new plant to Database: ' + str(e))
 			return False
 
+	def get_db(self):
+		return self.db
 
-	def get_by_key(self, name: str):
+	def get_value_by_key(self, name: str):
 		'''
 		Get Values by searching for the key.
 		Get plant conditions by searching for the plants name
@@ -71,7 +73,7 @@ class PlantDB(object):
 		pass
 
 
-	def get_by_values(self, water_quantity: str, water_quality: str, care_quantity: str, wind: bool, brightness: str):
+	def get_key_by_values(self, water_quantity: str, water_quality: str, care_quantity: str, wind: bool, brightness: str):
 		'''
 		Get keys by searching for their values
 		Get possible plants searching by condition
