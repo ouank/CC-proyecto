@@ -15,7 +15,7 @@ def example_user2():
 
 @pytest.fixture
 def json_dir():
-	return os.path.join(os.path.expanduser('~'), 'ugr', 'cc', 'repos', 'selva_urbana', 'src', 'tests', 'testdict_newplantdb.json')
+	return os.path.join(os.path.dirname(__file__), 'testdict_newplantdb.json')
 
 def test_getters_setters(example_user):
 	assert example_user.get_name() == 'Mark'

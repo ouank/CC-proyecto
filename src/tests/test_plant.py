@@ -5,8 +5,8 @@ import os
 
 @pytest.fixture
 def db_path():
-	return os.path.join(os.path.expanduser('~'), 'ugr', 'cc', 'repos', 'selva_urbana', 'src', 'tests', 'testdict_plantdb.json')
-
+	return os.path.join(os.path.dirname(__file__),'testdict_plantdb.json')	
+	
 @pytest.fixture
 def example_db(db_path):
 	return PlantDB(db_path = db_path)
