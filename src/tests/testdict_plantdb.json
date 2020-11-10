@@ -1,0 +1,24 @@
+{
+    "Crassula Ovata": {
+        "brightness": "fully",
+        "care_quantity": "rarely",
+        "humidity": "low",
+        "water_quality": "tap",
+        "water_quantity": "low",
+        "wind": true
+    },
+    "ivy": {
+        "brighness": "fully",
+        "humidity": "middle",
+        "water_quality": "tap",
+        "water_quantity": "high",
+        "wind": true
+    },
+    "spider_plant": {
+        "brighness": "fully",
+        "humidity": "middle",
+        "water_quality": "tap",
+        "water_quantity": "normal",
+        "wind": true
+    }
+}
