@@ -28,23 +28,27 @@ class User(object):
 	def set_email(self,email):
 		self.email = email
 
-	def request(self, plant_name: str):
+	def request(self, plant_name: str, path = None):
 		'''
 		[HU] As a User I want to make a suggestions about plants that should be added to the data base
 		For now it adds the plant to a simple list on the OS. The Saving point of the list will be changed in a later step
 		Args: 
 			plant_name: Name of the plant the user suggests to be added to the data base 
 		'''
-		json_dict = load_json('new_plants.json')
+		if path == None:
+			path = 'new_plants.json'
+		json_dict = load_json(path)
 		user_id = str(self.id)
 		json_dict[user_id] = {}
 		#json_dict['User_ID'] = self.id
-		json_dict[user_id]['User_Name'] = self.name
+		json_dict[user_id]['User_name'] = self.name
 		json_dict[user_id]['User_location'] = self.location
 		json_dict[user_id]['User_email'] = self.email
 		json_dict[user_id]['new_plant'] = plant_name
 		print(json_dict)
-		save_json(json_dict, 'new_plants.json')
+		save_json(json_dict, path)
+
+		return
 
 
 
