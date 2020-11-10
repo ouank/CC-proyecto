@@ -1,6 +1,7 @@
 import pytest
 from utils.user import User
 from utils.op_utils import *
+import os
 
 @pytest.fixture
 def example_user():
@@ -14,8 +15,7 @@ def example_user2():
 
 @pytest.fixture
 def json_dir():
-	return 'testdict_newplantdb.json'
-
+	return os.path.join(os.path.expanduser('~'), 'ugr', 'cc', 'repos', 'selva_urbana', 'src', 'tests', 'testdict_newplantdb.json')
 
 def test_getters_setters(example_user):
 	assert example_user.get_name() == 'Mark'

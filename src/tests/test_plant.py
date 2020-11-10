@@ -1,10 +1,11 @@
 import pytest
 from utils.plant import PlantDB
 from utils.op_utils import *
+import os
 
 @pytest.fixture
 def db_path():
-	return 'testdict_plantdb.json'
+	return os.path.join(os.path.expanduser('~'), 'ugr', 'cc', 'repos', 'selva_urbana', 'src', 'tests', 'testdict_plantdb.json')
 
 @pytest.fixture
 def example_db(db_path):
