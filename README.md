@@ -12,51 +12,16 @@ Pero no es fácil elegir la planta de interior adecuada que sobreviva a las cond
 Por esta razón, el objetivo de este proyecto es crear un sistema que le ayude a encontrar las plantas adecuadas para las condiciones pertinentes. El sistema le ofrecerá una selección de plantas de interior que se adapten en base a su ubicación, la dirección de su ventana, la frecuencia con la que desea cuidar sus plantas, entre otros criterios
 
 
-## Arquitectura
-Este Proyecto hará uso de la arquitectura basada en microservicios. Ésta se ajusta adecuadamente al proyecto, ya que éste tendrá que dividirse en diferentes servicios independientes que tendrán que trabajar juntos para dar al cliente el mejor resultado. 
-Como primer borrador, algunos de estos microservicios serán: un [API](https://ip-api.com/) para obtener la ubicación del cliente, el frontend, la base de datos para seleccionar las plantas, un API para redirigir al cliente a páginas con más información según las plantas determinadas, un [API](https://pypi.org/project/Wikipedia-API/) para mostrar información básica de la planta. 
+## Información del proyecto
+Los siguientes enlaces le llevarán a una descripción más detallada del proyecto.
 
-## Roles
-Tan pronto como este proyecto se termine, habrá principalmente dos grupos de personas que podrán beneficiarse de ello. 
-1. Como usario de ese aplicación podrá encontrar plantas nuevas y adecuadas y/o las condiciones que las necesitan.
-2. Como Vendedor de plantas puede actualizar su lista de productos (dependiendo de la mayoría de las solicitudes de búsqueda), puede ver en qué región hay muchas solicitudes (para la expansión de negocio) y/o anunciar
+La [descripción de la arquitectura](project_information/arquitectura.md) en la que se basará este proyecto.
 
+La descripción de [los historis de usarios](project_information/user_stories.md)
 
-## Hoja de ruta (Roadmap)
+[Un esbozo del proyecto en hitos](project_information/milestones.md)
 
-### Desarollo
-En la primera fase del desarrollo creo la sistema funcional más simple posible. Esta sistema consiste en tres partes diferentes:
-- [Crear la interfaz de usuario más simple](https://github.com/ouank/selva_urbana/issues/18)
-- [Crear el sistema más simple de middle tier information brokering system](https://github.com/ouank/selva_urbana/issues/19)
-- [Crear una base de datos simple con pocos ejemplos](https://github.com/ouank/selva_urbana/issues/20)
+Una descripción de [los roles](project_information/roles.md) en este proyecto.
 
-En la segunda fase, se añaden a la aplicación funciones adicionales que satisfacen las necesidades de ciertos roles. Esas funciones son, por ejemplo: 
-- [Implementar el Algoritmo de Búsqueda para navegar por el Banco de Datos por criterios](https://github.com/ouank/selva_urbana/issues/14)
-- [Añadir la fórmula de solicitud](https://github.com/ouank/selva_urbana/issues/15)
-
-Simultáneamente, las tres partes básicas también se refinan a un estándar MVP.
-- [Refinar la base de datos a una solución MVP](https://github.com/ouank/selva_urbana/issues/21)
-- [Refinar el sistema de middle tier information brokering system a la solución MVP](https://github.com/ouank/selva_urbana/issues/22)
-- [Refinar el frontend a la solución MVP](https://github.com/ouank/selva_urbana/issues/23)
-
-En la fase final del desarrollo, se crea una tubería de análisis de datos. La tubería debe cubrir al menos las siguientes funciones:
-- [Registrar el tráfico en la aplicación](https://github.com/ouank/selva_urbana/issues/16)
-- [Analizar las solicitudes y el tráfico de datos](https://github.com/ouank/selva_urbana/issues/17)
-
-### Pruebas 
-Esta es la fase de pruebas. Hay que crear pruebas (ya empiezan a crear pruebas durante la fase de desarrollo) y ejecutar todas las pruebas para comprobar si todo está bien.
-### Primer despliegue de la aplicación en una plataforma de la nube
-En esta fase la aplicación se pone en línea para una fase de prueba. 
-### Arreglar el código
-### Despliegue final
-
-## Miscelánea
-###User Stories
-[Los historis de usarios estan decribido aquí](project_information/user_stories.md)
-
-### Primer borrador de unas clases (corresponden a unas historias de usarios)
-[Aquí](src/utils/) hay el primer borrador de unas clases.
-
-## Milestones y issues
-[un esbozo del proyecto en hitos se puede encontrar aquí](project_information/milestones.md)
+[La planificación del proyecto y la hoja de ruta](project_information/roadmap.md)
 
