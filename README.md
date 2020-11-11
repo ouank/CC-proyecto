@@ -15,13 +15,20 @@ Por esta razón, el objetivo de este proyecto es crear un sistema que le ayude a
 ## Información del proyecto
 Los siguientes enlaces le llevarán a una descripción más detallada del proyecto.
 
-La [descripción de la arquitectura](project_information/arquitectura.md) en la que se basará este proyecto.
+La [descripción de la arquitectura](doc/arquitectura.md) en la que se basará este proyecto.
 
-La descripción de [los historis de usarios](project_information/user_stories.md)
+La descripción de [los historis de usarios](doc/user_stories.md)
 
-[Un esbozo del proyecto en hitos](project_information/milestones.md)
+[Un esbozo del proyecto en hitos](doc/milestones.md)
 
-Una descripción de [los roles](project_information/roles.md) en este proyecto.
+Una descripción de [los roles](doc/roles.md) en este proyecto.
 
-[La planificación del proyecto y la hoja de ruta](project_information/roadmap.md)
+[La planificación del proyecto y la hoja de ruta](doc/roadmap.md)
 
+## Gestor de tareas, pruebas y avance del proyecto
+
+Configuración correcta del [gestor de tareas](doc/gestor_tareas.md) y justificación de la misma.\
+Elección y justificación de la [biblioteca de aserciones](doc/bib_aserciones.md) usada.\
+Elección y justificación del [marco de pruebas](doc/marco_pruebas.md) usado.\
+Correcta relación entre [avance de código](src/utils) (incluyendo los tests) e HUs.\
+Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_plant.py).

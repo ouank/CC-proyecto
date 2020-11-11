@@ -1,3 +1,0 @@
-## Arquitectura
-Este Proyecto hará uso de la arquitectura basada en microservicios. Ésta se ajusta adecuadamente al proyecto, ya que éste tendrá que dividirse en diferentes servicios independientes que tendrán que trabajar juntos para dar al cliente el mejor resultado. 
-Como primer borrador, algunos de estos microservicios serán: un [API](https://ip-api.com/) para obtener la ubicación del cliente, la base de datos para seleccionar las plantas, un API para redirigir al cliente a páginas con más información según las plantas determinadas, un [API](https://pypi.org/project/Wikipedia-API/) para mostrar información básica de la planta. 
