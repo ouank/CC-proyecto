@@ -17,9 +17,9 @@ Los siguientes enlaces le llevarán a una descripción más detallada del proyec
 
 La [descripción de la arquitectura](doc/arquitectura.md) en la que se basará este proyecto.
 
-La descripción de [los historis de usarios](doc/user_stories.md)
+La descripción de [los historias de usarios](doc/user_stories.md)
 
-[Un esbozo del proyecto en hitos](doc/milestones.md)
+[Un esbozo del proyecto en milestones](doc/milestones.md)
 
 Una descripción de [los roles](doc/roles.md) en este proyecto.
 
