@@ -25,4 +25,3 @@ Para ejecutar uno de los tareas sólo se necesita ejecutar:\
 	<code>$invoke \<tarea> 
 
 El fichero tasks.py se encuentre [aquí](../tasks.py)
-
