@@ -14,7 +14,6 @@ class PlantDB(object):
 		self.cursor = self.connection.cursor()
 
 	def create_table(self):
-		"""create a database table if it does not exist already"""
 		self.cursor("CREATE TABLE IF NOT EXISTS plants(plant_name TEXT, \
 														water_quantity TEXT, \
 														water_quality TEXT, \
@@ -40,12 +39,10 @@ class PlantDB(object):
 		self.commit()
 
 	def close(self):
-		"""close sqlite3 connection"""
 		self.cursor.close()
 		self.connection.close()
 
 	def commit(self):
-		'''commit changes to database'''
 		self.connection.commit()
 
 	def get_criteria(self, name: str):
@@ -63,6 +60,5 @@ class PlantDB(object):
 		self.print_rows(self.cursor.fetchall())
 
 	def print_rows(self, data):
-		'''print all rows from data base'''
 		for row in data:
 			print(row)
