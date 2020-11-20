@@ -1,6 +1,4 @@
-from .user import User
 import os 
-from .op_utils import *
 import sqlite3
 
 class PlantDB(object):
@@ -8,13 +6,19 @@ class PlantDB(object):
 	[HU] As a plant lover, I would like to find plants with my own criteria
 	This is just a draft. Maybe another tool will be used for database
 	'''
-	__db_dir = os.path.join(os.path.dirname(__file__), 'PlantDB.db')
-	def __init__(self):
-		self.connection = sqlite3.connect(__db_dir)
+	def __init__(self, db_dir = os.path.join(os.path.dirname(__file__), 'PlantDB.db')):
+		self.__db_dir = db_dir
+		self.connection = sqlite3.connect(self.__db_dir)
 		self.cursor = self.connection.cursor()
 
+	def get_conn(self):
+		return self.connection
+
+	def get_cursor(self):
+		return self.cursor
+
 	def create_table(self):
-		self.cursor("CREATE TABLE IF NOT EXISTS plants(plant_name TEXT, \
+		self.cursor.execute("CREATE TABLE IF NOT EXISTS plants(plant_name TEXT, \
 														water_quantity TEXT, \
 														water_quality TEXT, \
 														care_quantity TEXT, \
@@ -34,9 +38,15 @@ class PlantDB(object):
 			brightness: How bright will the location be? [shadow, partly, fully]
 			humidity: What is the average humidity of the Region [low, middle, high]
 		'''
-		self.cursor.execute("INSERT INTO plants(plant_name, water_quantity, water_quality, care_quantity, wind, brightness, humidity) VALUES (?, ?, ?, ?, ?, ?, ?)", 
+		try:
+			self.cursor.execute("INSERT INTO plants(plant_name, water_quantity, water_quality, care_quantity, wind, brightness, humidity) VALUES (?, ?, ?, ?, ?, ?, ?)", 
 			(name, water_quantity, water_quality, care_quantity, wind, brightness, humidity))
-		self.commit()
+			self.commit()
+			print(f'Plant {name} was successfully added to the database with the following attributes: \
+					water_quantity: {water_quantity}, water_quality: {water_quality}, care_quantity: {care_quantity}, wind: {wind}, brightness: {brightness}, humidity: {humidity}.')
+		except:
+			print(f'Plant {name} could not be added. An Error occurred.')
+			
 
 	def close(self):
 		self.cursor.close()
@@ -45,20 +55,17 @@ class PlantDB(object):
 	def commit(self):
 		self.connection.commit()
 
-	def get_criteria(self, name: str):
+	def get_criteria(self, name: str) -> list:
 		'''Get plant conditions by searching for the plants name'''
-		self.cursor.execute("SELECT water_quantity, water_quality, care_quantity, wind, brightness, humidity FROM plants WHERE plant_name = plant_name")
-		self.print_rows(self.cursor.fetchall())
+		self.cursor.execute("SELECT water_quantity, water_quality, care_quantity, wind, brightness, humidity FROM plants WHERE plant_name = ?", [name])
+		return self.cursor.fetchall()
 
-	def get_plants(self, water_quantity: str, water_quality: str, care_quantity: str, wind: bool, brightness: str):
+	def get_plants(self, water_quantity: str, water_quality: str, care_quantity: str, wind: bool, brightness: str, humidity: str) -> list:
 		'''Get possible plants searching by condition'''
-		self.cursor.execute("SELECT plant_name FROM plants WHERE water_quantity = water_quantity \
-															 AND water_quality = water_quality \
-															 AND care_quantity = care_quantity \
-															 AND wind = wind \
-															 AND brightness = brightness")
-		self.print_rows(self.cursor.fetchall())
-
-	def print_rows(self, data):
-		for row in data:
-			print(row)
+		self.cursor.execute("SELECT plant_name FROM plants WHERE water_quantity = ? \
+															 AND water_quality = ? \
+															 AND care_quantity = ? \
+															 AND wind = ? \
+															 AND brightness = ? \
+															 AND humidity = ?", [water_quantity, water_quality, care_quantity, wind, brightness, humidity])
+		return self.cursor.fetchall()
