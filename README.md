@@ -26,9 +26,14 @@ Una descripción de [los roles](doc/roles.md) en este proyecto.
 [La planificación del proyecto y la hoja de ruta](doc/roadmap.md)
 
 ## Docker
-Elección y justificación del [contenedor base](doc/docker.md)
-[Dockerfile](Dockerfile)
-[Contenedor subido]() a Docker Hub y [configuración de la actualización automática.]()
+Elección y justificación del [contenedor base](doc/docker.md)\
+[Dockerfile](Dockerfile) y la [prueba](doc/imgs/docker_passed_tests.png) que funciona\
+[Contenedor subido a Docker Hub y configuración de la actualización automática.](doc/docker_hub_config.md)\
+[Github Container Registry](doc/ghcr_setup.md)\
+Avance del proyecto:\
+	- Añadió dos HUs nuevos: [HU5](https://github.com/ouank/selva_urbana/issues/29) y [HU6](https://github.com/ouank/selva_urbana/issues/21)\
+	- [Avance de código](src/utils/PlantDB.py)\
+	- He terminado un [HU](https://github.com/ouank/selva_urbana/issues/14)
 
 ## Gestor de tareas, pruebas y avance del proyecto
 
