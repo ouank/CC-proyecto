@@ -31,4 +31,4 @@ Configuración correcta del [gestor de tareas](doc/gestor_tareas.md) y justifica
 Elección y justificación de la [biblioteca de aserciones](doc/bib_aserciones.md) usada.\
 Elección y justificación del [marco de pruebas](doc/marco_pruebas.md) usado.\
 Correcta relación entre [avance de código](src/utils) (incluyendo los tests) e HUs.\
-Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_plant.py).
+Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_PlantDB.py).
