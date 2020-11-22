@@ -1,7 +1,7 @@
 # La Selva Urbana
 En este repositorio se va a desarrollar un proyecto para la asignatura de Cloud Computing del Máster de Ingeniería Informática de la Universidad de Granada durante el curso 2020/21.
 
-La configuración de git y Github se encuentra [aquí](setup_documentation/prep_repo.md)
+La configuración de git y Github se encuentra [aquí](doc/setup_documentation/prep_repo.md)
 
 ## Descripción del problema
 En este momento, el 55% de la población mundial vive en un área urbana. Se estima que este número aumentará al 68% para [2050](https://www.un.org/development/desa/en/news/population/2018-revision-of-world-urbanization-prospects.html). En Europa y América del Norte ya hay un 74% y un 82% de la población que vive en áreas urbanas, respectivamente.
@@ -25,6 +25,11 @@ Una descripción de [los roles](doc/roles.md) en este proyecto.
 
 [La planificación del proyecto y la hoja de ruta](doc/roadmap.md)
 
+## Docker
+Elección y justificación del [contenedor base](doc/docker.md)
+[Dockerfile](Dockerfile)
+[Contenedor subido]() a Docker Hub y [configuración de la actualización automática.]()
+
 ## Gestor de tareas, pruebas y avance del proyecto
 
 Configuración correcta del [gestor de tareas](doc/gestor_tareas.md) y justificación de la misma.\
@@ -32,3 +37,5 @@ Elección y justificación de la [biblioteca de aserciones](doc/bib_aserciones.m
 Elección y justificación del [marco de pruebas](doc/marco_pruebas.md) usado.\
 Correcta relación entre [avance de código](src/utils) (incluyendo los tests) e HUs.\
 Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_PlantDB.py).
+
+
