@@ -1,4 +1,4 @@
-# Descarga la versión 3.8 de Python
+#Descarga la versión 3.8 de Python
 FROM python:3.8-slim
 
 #Crea el directorio /app/test
