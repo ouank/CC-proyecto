@@ -9,4 +9,6 @@ Autorizado de Dockerhub Builder a Github
 Configuración de actualizaciónes automáticas
 ![automated build settings](imgs/automated_build_settings.png)
 
+![automated build pending](imgs/docker_build_que.png)
+
 ![automated build success](imgs/automated_build_success.png)
