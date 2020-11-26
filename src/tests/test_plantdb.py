@@ -1,6 +1,6 @@
 import pytest
 
-from utils.PlantDB import PlantDB
+from utils.plantdb import PlantDB
 
 import os
 import sqlite3 
@@ -37,7 +37,7 @@ def setup_test_data(setup_database):
 
 def test_sample_data(setup_test_data):
 	# Test to make sure that there is 1 item in the database
-	assert len(list(setup_test_data.cursor.execute("SELECT * FROM plants"))) == 2
+	assert len(list(setup_test_data._PlantDB__cursor.execute("SELECT * FROM plants"))) == 2
 
 def test_add_plant(setup_database, capsys):
 	name = "spider_plant"
@@ -51,8 +51,6 @@ def test_add_plant(setup_database, capsys):
 	captured = capsys.readouterr()
 	assert captured.out == f'Plant {name} was successfully added to the database with the following attributes: \
 					water_quantity: {water_quantity}, water_quality: {water_quality}, care_quantity: {care_quantity}, wind: {wind}, brightness: {brightness}, humidity: {humidity}.\n'
-	results = setup_database.cursor.fetchall()
-	print(results)
 
 def test_get_criteria(setup_test_data):
 	plant_name = "crassula_ovata"

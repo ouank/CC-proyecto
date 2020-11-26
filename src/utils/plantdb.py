@@ -9,16 +9,10 @@ class PlantDB(object):
 	def __init__(self, db_dir = os.path.join(os.path.dirname(__file__), 'PlantDB.db')):
 		self.__db_dir = db_dir
 		self.connection = sqlite3.connect(self.__db_dir)
-		self.cursor = self.connection.cursor()
-
-	def get_conn(self):
-		return self.connection
-
-	def get_cursor(self):
-		return self.cursor
+		self.__cursor = self.connection.cursor()
 
 	def create_table(self):
-		self.cursor.execute("CREATE TABLE IF NOT EXISTS plants(plant_name TEXT, \
+		self.__cursor.execute("CREATE TABLE IF NOT EXISTS plants(plant_name TEXT, \
 														water_quantity TEXT, \
 														water_quality TEXT, \
 														care_quantity TEXT, \
@@ -39,7 +33,7 @@ class PlantDB(object):
 			humidity: What is the average humidity of the Region [low, middle, high]
 		'''
 		try:
-			self.cursor.execute("INSERT INTO plants(plant_name, water_quantity, water_quality, care_quantity, wind, brightness, humidity) VALUES (?, ?, ?, ?, ?, ?, ?)", 
+			self.__cursor.execute("INSERT INTO plants(plant_name, water_quantity, water_quality, care_quantity, wind, brightness, humidity) VALUES (?, ?, ?, ?, ?, ?, ?)", 
 			(name, water_quantity, water_quality, care_quantity, wind, brightness, humidity))
 			self.commit()
 			print(f'Plant {name} was successfully added to the database with the following attributes: \
@@ -49,7 +43,7 @@ class PlantDB(object):
 			
 
 	def close(self):
-		self.cursor.close()
+		self.__cursor.close()
 		self.connection.close()
 
 	def commit(self):
@@ -57,15 +51,15 @@ class PlantDB(object):
 
 	def get_criteria(self, name: str) -> list:
 		'''Get plant conditions by searching for the plants name'''
-		self.cursor.execute("SELECT water_quantity, water_quality, care_quantity, wind, brightness, humidity FROM plants WHERE plant_name = ?", [name])
-		return self.cursor.fetchall()
+		self.__cursor.execute("SELECT water_quantity, water_quality, care_quantity, wind, brightness, humidity FROM plants WHERE plant_name = ?", [name])
+		return self.__cursor.fetchall()
 
 	def get_plants(self, water_quantity: str, water_quality: str, care_quantity: str, wind: bool, brightness: str, humidity: str) -> list:
 		'''Get possible plants searching by condition'''
-		self.cursor.execute("SELECT plant_name FROM plants WHERE water_quantity = ? \
+		self.__cursor.execute("SELECT plant_name FROM plants WHERE water_quantity = ? \
 															 AND water_quality = ? \
 															 AND care_quantity = ? \
 															 AND wind = ? \
 															 AND brightness = ? \
 															 AND humidity = ?", [water_quantity, water_quality, care_quantity, wind, brightness, humidity])
-		return self.cursor.fetchall()
+		return self.__cursor.fetchall()
