@@ -42,6 +42,6 @@ Correcta relación entre avance de código (incluyendo los tests) y HUs.\
 	- 1. [código](src/db/plantdb.py), [tests](src/tests/test_plantdb.py), [HU](https://github.com/ouank/selva_urbana/issues/14)\
 	- 2. [código](src/user/user.py), [tests](src/tests/test_user.py), [HU](https://github.com/ouank/selva_urbana/issues/15)\
 Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_plantdb.py).\
-Avance de codigo: - changed from sqlite3 to sqlalchemy for [object relational mapping](src/db/plantdb.py)\
+Avance de codigo: - changed from sqlite3 to sqlalchemy for [object relational mapping](src/db/plantdb.py)
 
 
