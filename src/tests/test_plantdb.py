@@ -1,6 +1,6 @@
 import pytest
 
-from utils.plantdb import PlantDB
+from db.plantdb import PlantDB
 
 import os
 import sqlite3 
@@ -10,7 +10,7 @@ import sqlite3
 def setup_database():
 	""" Fixture to set up the in-memory database with test table"""
 	db = PlantDB(db_dir = ':memory:')
-	db.create_table()
+	#db.create_table()
 	yield db
 
 @pytest.fixture
@@ -37,7 +37,8 @@ def setup_test_data(setup_database):
 
 def test_sample_data(setup_test_data):
 	# Test to make sure that there is 1 item in the database
-	assert len(list(setup_test_data._PlantDB__cursor.execute("SELECT * FROM plants"))) == 2
+	#assert len(list(setup_test_data._PlantDB__cursor.execute("SELECT * FROM plants"))) == 2
+	assert len(setup_test_data.dal.connection.execute(setup_test_data.dal.plants.select()).fetchall()) == 2
 
 def test_add_plant(setup_database, capsys):
 	name = "spider_plant"
@@ -55,7 +56,7 @@ def test_add_plant(setup_database, capsys):
 def test_get_criteria(setup_test_data):
 	plant_name = "crassula_ovata"
 	criterias = setup_test_data.get_criteria(name = plant_name)
-	assert criterias == [('low', 'tap', 'rarely', True, 'fully', 'low')]
+	assert criterias == [('crassula_ovata','low', 'tap', 'rarely', True, 'fully', 'low')]
 
 def test_get_plants(setup_test_data):
 	water_quantity = "low"
