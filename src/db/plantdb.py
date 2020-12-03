@@ -10,7 +10,7 @@ class PlantDB:
 	[HU] As a plant lover, I would like to find plants with my own criteria
 	This is just a draft. Maybe another tool will be used for database
 	'''
-	def __init__(self, db_dir = os.path.join(os.path.dirname(__file__), 'PlantallaDB.db')):
+	def __init__(self, db_dir = os.path.join(os.path.dirname(__file__), 'PlantDB.db')):
 		self.__db_dir = db_dir
 		self.dal = dal
 		self.dal.db_init(db_dir = self.__db_dir)
