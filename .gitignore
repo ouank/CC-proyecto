@@ -10,3 +10,4 @@ src/tests/creator.py
 old**
 src/utils/PlantDB.db
 src/main.py
+src/db/db.py
