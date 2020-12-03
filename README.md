@@ -30,7 +30,7 @@ Elección y justificación del [contenedor base](doc/docker.md)\
 [Github Container Registry](doc/ghcr_setup.md)\
 Avance del proyecto:\
 	- Añadió dos HUs nuevos: [HU5](https://github.com/ouank/selva_urbana/issues/29) y [HU6](https://github.com/ouank/selva_urbana/issues/21)\
-	- [Avance de código](src/plant/plantdb.py)\
+	- [Avance de código](src/db/plantdb.py)\
 	- He terminado un [HU](https://github.com/ouank/selva_urbana/issues/14)
 
 ## Gestor de tareas, pruebas y avance del proyecto
@@ -38,7 +38,8 @@ Avance del proyecto:\
 Configuración correcta del [gestor de tareas](doc/gestor_tareas.md) y justificación de la misma.\
 Elección y justificación de la [biblioteca de aserciones](doc/bib_aserciones.md) usada.\
 Elección y justificación del [marco de pruebas](doc/marco_pruebas.md) usado.\
-Correcta relación entre [avance de código](src/) (incluyendo los tests) e HUs.\
+Correcta relación entre [avance de código](src/) (incluyendo los tests) y HUs.\
+	- changed from sqlite3 to sqlalchemy for [object relational mapping](src/db/plantdb.py)
 Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_plantdb.py).
 
 
