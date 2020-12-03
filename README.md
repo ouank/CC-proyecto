@@ -1,8 +1,6 @@
 # La Selva Urbana
 En este repositorio se va a desarrollar un proyecto para la asignatura de Cloud Computing del Máster de Ingeniería Informática de la Universidad de Granada durante el curso 2020/21.
 
-La configuración de git y Github se encuentra [aquí](doc/setup_documentation/prep_repo.md)
-
 ## Descripción del problema
 En este momento, el 55% de la población mundial vive en un área urbana. Se estima que este número aumentará al 68% para [2050](https://www.un.org/development/desa/en/news/population/2018-revision-of-world-urbanization-prospects.html). En Europa y América del Norte ya hay un 74% y un 82% de la población que vive en áreas urbanas, respectivamente.
 Pero hay mucha gente que anhela la naturaleza y además, el nivel de estrés aumenta debido a la [urbanización](https://www.researchgate.net/publication/299078166_Impacts_of_urbanization_process_on_mental_health), entre otras razones. Se demuestra que tener plantas en su área de vivienda o trabajo puede [reducir el estrés](https://psychcentral.com/news/2020/01/06/plants-shown-to-reduce-stress-at-work/153075.html).
@@ -32,7 +30,7 @@ Elección y justificación del [contenedor base](doc/docker.md)\
 [Github Container Registry](doc/ghcr_setup.md)\
 Avance del proyecto:\
 	- Añadió dos HUs nuevos: [HU5](https://github.com/ouank/selva_urbana/issues/29) y [HU6](https://github.com/ouank/selva_urbana/issues/21)\
-	- [Avance de código](src/utils/PlantDB.py)\
+	- [Avance de código](src/plant/plantdb.py)\
 	- He terminado un [HU](https://github.com/ouank/selva_urbana/issues/14)
 
 ## Gestor de tareas, pruebas y avance del proyecto
@@ -40,7 +38,7 @@ Avance del proyecto:\
 Configuración correcta del [gestor de tareas](doc/gestor_tareas.md) y justificación de la misma.\
 Elección y justificación de la [biblioteca de aserciones](doc/bib_aserciones.md) usada.\
 Elección y justificación del [marco de pruebas](doc/marco_pruebas.md) usado.\
-Correcta relación entre [avance de código](src/utils) (incluyendo los tests) e HUs.\
-Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_PlantDB.py).
+Correcta relación entre [avance de código](src/) (incluyendo los tests) e HUs.\
+Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_plantdb.py).
 
 
