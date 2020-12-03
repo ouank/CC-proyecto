@@ -38,8 +38,10 @@ Avance del proyecto:\
 Configuración correcta del [gestor de tareas](doc/gestor_tareas.md) y justificación de la misma.\
 Elección y justificación de la [biblioteca de aserciones](doc/bib_aserciones.md) usada.\
 Elección y justificación del [marco de pruebas](doc/marco_pruebas.md) usado.\
-Correcta relación entre [avance de código](src/) (incluyendo los tests) y HUs.\
-	- changed from sqlite3 to sqlalchemy for [object relational mapping](src/db/plantdb.py)\
-Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_plantdb.py).
+Correcta relación entre avance de código (incluyendo los tests) y HUs.\
+	- código(src/db/plantdb.py), tests(src/tests/test_plantdb.py), HU(https://github.com/ouank/selva_urbana/issues/14)\
+	- código(src/user/user.py), tests(src/tests/test_user.py), HU(https://github.com/ouank/selva_urbana/issues/15)
+Tests significativos: tests unitarios del [usario](src/tests/test_user.py) y de la [base de datos](src/tests/test_plantdb.py).\
+Avance de codigo: - changed from sqlite3 to sqlalchemy for [object relational mapping](src/db/plantdb.py)\
 
 
