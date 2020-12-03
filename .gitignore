@@ -9,3 +9,4 @@ src/utils/__pycache__/
 src/tests/creator.py
 old**
 src/utils/PlantDB.db
+src/main.py
