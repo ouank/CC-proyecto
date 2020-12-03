@@ -1,5 +1,5 @@
 import pytest
-from utils.user import User
+from user.user import User
 from utils.op_utils import *
 import os
 
