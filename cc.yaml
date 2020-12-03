@@ -1,7 +1,7 @@
 ---
 entidad:
- - src/utils/plantdb.py
- - src/utils/user.py
+ - src/db/plantdb.py
+ - src/user/user.py
 fichero_tareas: tasks.py
 lenguaje: python3.8
 test:
